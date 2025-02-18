@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App Container */
+.app {
+  background: linear-gradient(135deg, rgba(192, 31, 198, 0.9), rgba(31, 198, 192, 0.9));
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transition: transform 0.3s;
+}
+
+/* Hover Effect on App Container */
+.app:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 1rem;
+  color: #f7f7f8;
+  font-size: 2.5rem;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 1rem;
+}
+
+/* Input Field */
+input {
+  padding: 0.8rem;
+  border: 2px solid #0072ff;
+  border-radius: 6px;
+  width: calc(100% - 2rem);
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #00c6ff;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #0072ff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Weather Info Styles */
+.weather-info {
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.192);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+/* Error Message Styles */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
